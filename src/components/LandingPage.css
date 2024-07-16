@@ -1,0 +1,353 @@
+/* General Styles */
+body, html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+.section1 {
+    padding: 20px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #333;
+    color: white;
+    position: fixed;
+    top: 0;
+    width: 95%;
+    z-index: 1;
+
+}
+
+.navbar .logo img {
+    height: 50px;
+}
+
+.nav-link ul {
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+}
+
+.nav-link ul li {
+    margin: 0 10px;
+}
+
+.nav-link ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.nav-link ul li a:hover{
+    color: rgb(62, 193, 202);
+}
+
+.intro {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.intro h3 {
+    font-size: 45px;
+    color: black;
+}
+
+.intro h3 span {
+    color: rgb(74, 74, 160);
+}
+
+.intro p {
+    font-size: 25px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: black;
+}
+
+.intro button {
+    width: 200px;
+    height: 50px;
+    margin-top: 40px;
+    background-color: rgb(74, 74, 160);
+    border: none;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+
+
+
+/* General styles for the section */
+.section2 {
+    padding: 20px;
+    background-color: #f9f9f9;
+}
+
+.features {
+    text-align: center;
+}
+
+.features h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.keys {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+.keys div {
+    background-color: #ffffff;
+    border: 1px solid #e0e0e0;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 100%;
+    max-width: 300px;
+    text-align: left;
+}
+
+.keys h4 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.keys p {
+    font-size: 1rem;
+    color: #555555;
+}
+
+
+
+/* Container for the section */
+.section4 {
+    padding: 20px;
+    background-color: #f9f9f9;
+}
+
+/* Flexbox layout for the works container */
+.works {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+/* Individual work items */
+.works > div {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    width: 100%;
+    max-width: 400px;
+}
+
+/* Styling for the headings */
+.works h3 {
+    margin-top: 0;
+    color: #333;
+}
+
+/* Styling for the paragraphs */
+.works p {
+    color: #666;
+}
+
+/* Styling for the button */
+.works button {
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.works button:hover {
+    background-color: #0056b3;
+}
+
+
+
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+    }
+
+    .nav-link ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav-link ul li {
+        margin: 10px 0;
+    }
+
+    .intro h3 {
+        font-size: 35px;
+    }
+
+    .intro p {
+        font-size: 20px;
+    }
+
+    .intro button {
+        width: 150px;
+        height: 40px;
+    }
+}
+
+@media (max-width: 480px) {
+    .intro h3 {
+        font-size: 25px;
+    }
+
+    .intro p {
+        font-size: 18px;
+    }
+
+    .intro button {
+        width: 120px;
+        height: 35px;
+    }
+}
+
+
+
+
+/* General styles for the section */
+.section3 {
+    padding: 20px;
+    background-color: #f2f2f2;
+}
+
+.testimonials {
+    text-align: center;
+}
+
+.testimonials h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.keys {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+.keys div {
+    background-color: #ffffff;
+    border: 1px solid #e0e0e0;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 100%;
+    max-width: 300px;
+    text-align: left;
+}
+
+.keys h3 {
+    font-size: 1.2rem;
+    margin-bottom: 5px;
+}
+
+.keys h4 {
+    font-size: 1rem;
+    margin-bottom: 10px;
+}
+
+.keys p {
+    font-size: 0.9rem;
+    color: #555555;
+}
+
+
+
+
+
+/* Media queries for responsiveness */
+@media (min-width: 600px) {
+    .keys {
+        justify-content: space-between;
+    }
+}
+
+@media (min-width: 768px) {
+    .keys {
+        justify-content: space-between;
+    }
+}
+
+@media (min-width: 992px) {
+    .keys div {
+        flex: 1;
+        margin: 0 10px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .keys {
+        justify-content: space-evenly;
+    }
+}
+
+
+
+/* Media queries for responsiveness */
+@media (min-width: 600px) {
+    .keys {
+        justify-content: space-between;
+    }
+}
+
+@media (min-width: 768px) {
+    .keys {
+        justify-content: space-between;
+    }
+}
+
+@media (min-width: 992px) {
+    .keys div {
+        flex: 1;
+        margin: 0 10px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .keys {
+        justify-content: space-evenly;
+    }
+}
+
+.testimonials > div:last-of-type {
+    background-color: #ffffff;
+    border: 1px solid #e0e0e0;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-top: 20px;
+    text-align: left;
+}
+
+
+/* Responsive layout for larger screens */
+@media (min-width: 768px) {
+    .works {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+}

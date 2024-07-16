@@ -1,23 +1,27 @@
-// src/App.jsx
 import React from 'react';
-import Navbar from './components/landing page/Navbar';
-import Hero from './components/landing page/Hero';
-import KeyFeatures from './components/landing page/KeyFeatures';
-import HowItWorks from './components/landing page/HowItWorks';
-import Testimonials from './components/landing page/Testimonials';
-import Footer from './components/landing page/Footer';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import LandingPage from './components/LandingPage';
+import SignUp from './components/SignUp';
+import Login from './components/Login';
+import YouthDashboard from './components/youth/YouthDashboard';
+import AdminDashboard from './components/admin/admin';
+import ModeratorDashboard from './components/moderator/moderator';
+import ProfessionalDashboard from './components/MentalHealthProfessional/MentalHealthProfessional';
 
-const App = () => {
+function App() {
   return (
-    <div>
-      <Navbar />
-      <Hero />
-      <KeyFeatures />
-      <HowItWorks />
-      <Testimonials />
-      <Footer />
-    </div>
+    <Router>
+      <Routes>
+        <Route path="/" element={<LandingPage />} />
+        <Route path="/signup" element={<SignUp />} />
+        <Route path="/login" element={<Login />} />
+        <Route path="/dashboard" element={<YouthDashboard />} />
+        <Route path="/admin-dashboard" element={<AdminDashboard />} />
+        <Route path="/moderator-dashboard" element={<ModeratorDashboard />} />
+        <Route path="/professional-dashboard" element={<ProfessionalDashboard />} />
+      </Routes>
+    </Router>
   );
-};
+}
 
 export default App;
