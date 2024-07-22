@@ -23,8 +23,8 @@ const LandingPage = () => {
         </div>
 
         <div className="intro">
-          <h3>Welcome to <span>Mind Your Mental Hub.</span><br />We match your expectations and<br /> your dream jobs</h3>
-          <p>We love to find the opportunities and skill immersion for our clients and we expect to find them a better job</p>
+          <h3>Welcome to <span>Mind Your Mental Hub.</span><br />Start your mental health journey today! <br/></h3>
+          <p>We're glad you're here! Explore resources, connect with others, and take care of your mental well-being</p>
           <Link to="/signup"><button>GET STARTED</button></Link>
         </div>
       </section>

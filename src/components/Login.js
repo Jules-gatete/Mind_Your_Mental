@@ -27,7 +27,7 @@ const Login = () => {
         break;
       default:
         navigate('/dashboard');
-    }
+    } 
   };
 
   return (
