@@ -1,4 +1,4 @@
-// src/components/professional/RecomendResources.jsx
+// src/components/professional/RecommendResources.jsx
 import React, { useState, useEffect } from 'react';
 
 const RecommendResources = () => {
@@ -27,7 +27,7 @@ const RecommendResources = () => {
   };
 
   return (
-    <div className="grid grid-cols-2 gap-4">
+    <div className="grid grid-cols-1 md:grid-cols-2 gap-4 p-4">
       <div>
         <h3 className="text-xl font-semibold mb-4">Add Educational Resource</h3>
         <form onSubmit={addResource}>
@@ -61,7 +61,7 @@ const RecommendResources = () => {
       </div>
       <div>
         <h3 className="text-xl font-semibold mb-4">Existing Resources</h3>
-        {resources.map(resource => (
+        {resources.map((resource) => (
           <div key={resource.id} className="bg-white p-4 rounded shadow mb-4">
             <h4 className="text-lg font-semibold">{resource.title}</h4>
             <a href={resource.url} target="_blank" rel="noopener noreferrer" className="text-blue-500">
@@ -75,7 +75,7 @@ const RecommendResources = () => {
                 className="p-2 border rounded mr-2"
               >
                 <option value="">Select User</option>
-                {users.map(user => (
+                {users.map((user) => (
                   <option key={user.id} value={user.id}>{user.name}</option>
                 ))}
               </select>

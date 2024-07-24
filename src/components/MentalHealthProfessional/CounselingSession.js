@@ -23,7 +23,7 @@ const CounselingSession = () => {
   };
 
   return (
-    <div className="grid grid-cols-2 gap-4">
+    <div className="grid grid-cols-1 md:grid-cols-2 gap-4 p-4">
       <div>
         <h3 className="text-xl font-semibold mb-4">Schedule Counseling Session</h3>
         <form onSubmit={scheduleSession}>
@@ -72,6 +72,14 @@ const CounselingSession = () => {
       <div>
         <h3 className="text-xl font-semibold mb-4">Upcoming Sessions</h3>
         {/* List upcoming sessions */}
+        <ul className="list-disc list-inside">
+          {sessions.map((session, index) => (
+            <li key={index}>
+              {session.theme} - {session.date} at {session.time}
+              <p>{session.details}</p>
+            </li>
+          ))}
+        </ul>
         <h3 className="text-xl font-semibold mb-4 mt-4">Past Sessions</h3>
         {/* List past sessions */}
       </div>

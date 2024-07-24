@@ -14,7 +14,7 @@ const UserProfiles = () => {
   );
 
   return (
-    <div>
+    <div className="p-4">
       <h3 className="text-xl font-semibold mb-4">User Profiles</h3>
       <input
         type="text"
@@ -23,7 +23,7 @@ const UserProfiles = () => {
         value={searchTerm}
         onChange={(e) => setSearchTerm(e.target.value)}
       />
-      <div className="grid grid-cols-3 gap-4">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
         {filteredUsers.map(user => (
           <div key={user.id} className="bg-white p-4 rounded shadow">
             <h4 className="text-lg font-semibold">{user.name}</h4>
